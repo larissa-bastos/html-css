@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Imagens dinâmicas, áudios e vídeos</title>
+</head>
+<body>
+	<h2>Considerações iniciais</h2>
+	<h3>Seu site deve se adaptar a diferentes tamanhos de tela</h3>
+	<p>A gente abre sites hoje em dia em diversos dispositivos diferentes: smartphones, tablets, notebooks, tvs, etc. Com isso em mente, a gente vai ter que adaptar o conteúdo a muitos tamanhos de tela.<br>A mídia que mais tem problema com isso são as imagens. Uma TV abre imagens enormes, mas se abrirmos o mesmo site num celular, vamos ter que redimensionar a imagem com CSS. O problema é que mudar com CSS não muda o tamanho do arquivo de imagens, o que aumenta o consumo de dados e deixa o site pesado e lento. Sites assim fazem as pessoas cansarem e desistirem logo, fechando o site, diminuindo seu valor no SEO.</p>
+
+	<h3>Imagens flexíveis</h3>
+	<p>Então para fazer tudo da melhor forma, a gente quer gerar imagens de vários tamanhos e fazer o carregador carregar a certa para cada dispositivo que o acessar. As tags são picture e source. 
+
+		<h2>Imagens dinâmicas</h2>
+	<p>Primeiro: tamanho não é documento. Grandes imagens formam um site pesado e afeta o SEO. Lembrando de como colocar uma imagem: img src="link da sua imagem" alt "texto alternativo para leitores de tela". 
+	<br>
+	Mas então o que fazemos para adaptar uma imagem a diferentes dispositivos e não ficar faltando nada? A gente cria várias imagens de diferentes tamanhos e avisa pra o site qual a gente quer que apareça dependendo do tamanho do dispositivo. Para testar, vamos aumentar e diminuir o zoom do browser. 
+NOVA TAG: picture. Dentro dela fica a img e outra tag, acima da img, chamada SOURCE. </p>
+	<picture>
+		<source media="(max-width: 750px" srcset="imagem/img-p.png" type="image/png">
+		<source media="(max-width: 1050px)"  srcset="imagem/img-m.png" type="image/png"> 
+			<!--O que isso nos diz: a tag source trás uma media específica (pode ser mínima ou max, professor gosta de usar a max) que até x tamanho de tela, será usada tal foto (a gente define ela no srcset). O prof sempre coloca uns 50px a mais do que a imagem que a gente fez..
+				Além disso, perceba que a resolução menor vem primeiro e aumenta gradualmente. Se a ordem não for seguida, NÃO FUNCIONA. -->
+		<img src="imagem/img-g.png" alt="imagem flexível grande">
+	</picture>
+	<picture>
+		<source media="(max-width: 750px" srcset="imagem/gato-p.png" type="image/png">
+		<source media="(max-width:1050px" srcset="imagem/gato-m.png" type="image/png">
+		<img src="imagem/gato-g.png" alt="gato grande">
+	</picture>
+	<h2>Ok, áudio agora.</h2>
+	<p>Sobre áudios: antes de mais nada, cuidado com direito autoral. Não só imagem, como também vídeos e áudios. Tem sites para audios sem licença. Mas no caso vou pegar um karaoke do pc já que esse site não vai pro ar. <br>Cuidado com o tamanho do áudio/vídeo também.
+	<br>Vamo lá:</p>
+	<audio src="media/audio.mp3" controls autoplay loop> </audio>
+	<!--Assim não rolou o autoplay. -->
+	<!--Formatos suportados: MP4, OGG, WAV (evite esse, muito pesado)-->
+	<p>Temos outra maneira de criar áudios com mais compatibilidade com todos os navegadores. Segue</p>
+	<audio preload="metadata" controls autoplay loop>
+		<source src="media/audio.mp3" type="audio/mpeg">
+		<!--Se você botar 3 tipos por ex ele vai primeiro tentar o primeiro, depois tentar o segundo, depois o terceiro. A ordem é importante. Se não conseguir nenhum você pode deixar setada essa mensagem de erro aqui:-->
+		<p>Infelizmente seu navegador não suporta áudio. Você pode baixar o áudio <a href="media/audio.mp3" download="audio.mp3" type="audio/mpeg"> aqui.</a>
+	</audio>
+</body>
+</html>

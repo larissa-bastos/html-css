@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formatação de textos html</title>
+</head>
+<body>
+	<h1>Semântica na HTML5 - formatação</h1>
+     <p>A HTML5 mudou o conceito do html, fazendo-o focar em semântica. Assim, algumas tags foram trocadas, porque se referiam especificamente à forma. Agora, precisamos olhar as novas tags e saber como elas são feitas. </p>
+    <h2>Negrito/destaque</h2>
+    <p>Antigamente, se usava de forma não semântica. Você já sabe qual é. Ainda funciona, mas não é semântica, não quer dizer nada. Atualmente, você coloca STRONG. Significa que você quer dar <strong>destaque</strong> no seu texto, ou seja, qual o motivo dessa mudança. </p>
+    <h2>Itálico/ênfase</h2>
+    <p>Novamente: itálico era só a forma. agora, usamos EM - emphasis. Ou seja, damos <em>ênfase</em> ao texto. </p>
+    <p>Além disso, quando um leitor de tela vai ler o texto, comandos semânticos fazem realmente dar ênfase/destaque ao seu texto. </p>
+    <h2>Texto Marcado (marcador de texto)</h2>
+    <p>Podemos criar <mark style="background-color:aqua">um texto marcado</mark> usando a tag mark. Para mudar a cor, só com CSS. Isso aí foi css. Vamo fazer outro <mark style="background-color:darkgreen">texto marcado aqui</mark>.</p>
+    <p>A gente pode mudar todos os marks ao mesmo tempo, também. Para isso, a gente deixa só mark mesmo, e na head tu faz uma tag style e cria um seletor mark: background color. Assim quando tu atualizar vai estar para todo mundo.</p>
+    <h2> Texto marcado </h2>
+    Repetindo o <mark style="background-color:deepskyblue;">texto marcado</mark> para ver como funciona envelopar e tal. 
+    <!-- Caso você queira deixar todos os marks com a mesma cor, você adiciona uma tag style logo abaixo de mark e modifica em css. Assim todos vão ficar iguais. -->
+    <h2> Texto pequeno </h2>
+    <p> Tiraram a tag de texto grande, mas ainda existe a tag small para <small>texto pequeno</small>. Mas pense no contexto ao usar, caso não haja modifique em css.
+    <h2>Texto deletado </h2>
+    <p>Marcamos um texto <del>como excluido</del> usando del. Para <ins>inserir</ins> (ou sublinhar, mas com sentido), use ins. </p>
+    <h2>Texto sobrescrito e subescrito.</h2>
+    <p>Para inserir coisas tipo x ao quadrado: x<sup>20</sup> (coloca o 2 normal): sobrescrito, tag sup. Para inserir coisas tipo h<sub>2</sub>o (coloca o 2 normal): subescrito, tag sub.</p>
+</body>
+</html>

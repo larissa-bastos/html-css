@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Outras formatações</title>
+</head>
+<body>
+	<h1>Outras formatações</h1>
+	<h2>Código-fonte</h2>
+	<p>Código fonte são códigos, como o que estamos escrevendo agora. Para a gente ler códigos fontes, normalmente usamos fontes monoespaçadas, que melhoram a visualização. Por isso, temos a tag code para colocar tudo em fontes monoespaçadas. Exemplo agora. </p>
+	<code>
+		num = int(imput'Digite um Número');
+	</code>
+	<p>Para manter os espaços, ou seja, a indentação de um código: usa a tag pre antes da tag code. Assim vai sair certo, como um código mesmo. </p>
+	<h2>Citações</h2>
+	<p>Para avisar ao seu html que está fazendo uma citação, você usa uma tag para colocar as aspas de citação. Essa tag é q (quote). Por exemplo, <q>isso vai ficar entre aspas.</q> Ou seja, não fica com FORMA das aspas, e sim a semântica. Mas se for botar alguma ironia ou besteira, pode colocar aspas normal, tá?</p>
+	<h2>Citações completas</h2>
+	<p>Vou botar uma quote minha. Blockquote. Blockquote cite="". Para colocar o link do livro ou da página do autor.</p>
+	<p>Segundo Larissa:</p>
+	<blockquote>
+		Às vezes sinto como se eu não existisse. Não só pelos outros, mas também comigo mesma. Não sei se há uma parte de mim que valha a pena. Eu tento; faço o que posso, me esforço, me doo. Mas não muda o resultado final. 
+	</blockquote>
+	<h2>Abreviações.</h2>
+	<p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr>. HTML é uma sigla. Coloque siglas entre a tag abbr, para que o SEO saiba do que você ta falando. Além disso, quando a pessoa passar o mouse no lugar, vai aparecer o significado. É legal. Fica um sublinhado, que pode ser modificado com CSS.</p>
+
+	<p>Bdo é uma tag para texto invertido. Não vou exemplificar não. </p>.
+	<hm>
+	<h2>Listas ordenadas!</h2>
+	<p>Em que a ordem é bem importante, não pode sair da ordem. Por ex: receitas, aprovados nos vestibular, listas comparativas. Para criar, usamos a tag ol (tem fechamento), a tag ol é aberta, e dentro dela fica a tag li (fechamento opcional) mais recuada. Li é list item, então entre as tags você especifica os itens.
+	<br>
+	A tag ol tem um parâmetro type = para os tipos de marcador. Os tipos são: 1 (número normal, o padrão, não precisa do type), A (A, B, C, D, tudo maiusculo), a (a, b, c, d, minúsculos); I (algoritmos romanos maiúsculos); i (algoritmos romanos minúsculos).
+	<br>
+	Depois do type, você pode botar type para marcar o início da contagem, tipo contar a partir do 3: a primeira da lista vira 3, depois 4, etc. Ficaria assim: (ol type="A" start = "3"). Seria uma lista com ABC <strong>começando do c. Então independente de qual tipo seja, sempre coloque o start em números. </strong>
+	<br>Ex:</p>
+	<h2>Meus livros favoritos para ler antes de dormir:</h2>
+	<ol>
+		<li>Quarteto smythe-smiths</li>
+		<li>Bridgertons (4, 7, 8)</li>
+		<li>Bloodlines</li>
+		<li>Vampire Academy</li>
+		<li>Um independente fofinho</li>
+		<li>Percy Jackson, série original</li>
+	</ol>
+	<!--E agora descobri que o número vai automático -->
+	<ol type="A" start="3">
+		<li>dkksjlda</li>
+		<li>askjdksldj</li>
+		<li>djskdjdf</li>
+	</ol>	
+	<h2>Listas não ordenadas</h2>
+	<p>
+		Listas não ordenadas são listas que a ordem dos fatores não importa em relação ao significado da lista, é só pra organizar os itens. Por ex: uma lista de compras. Elas são feitas com a tag ul, e a tag li marca seus itens. 
+		<br>
+		O marcador normal é a bolinha preta preenchida, mas pode-se configurar a propriedade type para ficar um: disc (bolinha preta padrão), circle (bola com borda preta e sem preenchimento), square (quadrado preto completamente pintado).
+		Exemploo:
+	</p>
+	<ul type="square">
+		<li>Feijão</li>
+		<li>Carne</li>
+		<li>Queijo</li>
+		<li>Tapioca</li>
+		<li>Frango</li>
+	</ul>
+	<p>A gente pode também fazer listas mistas! Listas dentro de listas. Tipo um to-do lá do Notion:
+	</p>
+	<ol type="a">
+		<li>Atividades do ead</li>
+		<li>Redação publicitária</li>
+		<li>Velda: Karl Marx:</li>
+		<ol type= "i">
+			<li>Ver livros da biblioteca virtual</li>
+			<li>Fazer resumo</li>
+			<li>Fazer slides</li>
+		</ol>
+		<li>Estudar programação:</li>
+		<ul type= "circle">
+			<li>HTML e CSS do curso em vídeo</li>
+			<li>Aula da rocketseat</li>
+			<li>Python</li>
+			<li>Linux</li>
+		</ul>
+	</ol>
+	<h2>Atividade proposta: Lista de Jogos</h2>
+	<h3>Meus jogos favoritos!</h3>
+	<ul>
+		<li>PS4:</li>
+		<ol>
+			<li>The Last of Us</li>
+		</ol>
+		<li>Steam:</li>
+		<ol>
+			<li>A lenda do herói</li>
+			<li>Hades</li>
+			<li>Gris</li>
+		</ol>
+		<li>PC normal:</li>
+		<ol>
+			<li>LOL</li>
+			<li>Smite</li>
+		</ol>
+	</ul>
+	<h2>Lista de definições</h2>
+	<p>
+		É uma lista de termos e suas descrições. Não tem demarcadores, mas é útil em alguns momentos. A tag é dl (definition list) e cada termo é um dt (definition term) e as descrições dd (definition description). dl tem fechamento obrigatório, e as outras fechamento opcional. Ela ajuda com mecanismos de busca (o google dá valor para sites com listas de definição).
+	</p>
+	<h3>Exemplo: Shipps e seus nomes!</h3>
+	<dl>
+		<dt>Percabeth
+			<dd>Percy + Annabeth, Percy Jackson.
+		<dt>Joesar
+			<dd>Joui e César, Ordem Paranormal.
+		<dt>Jannie
+			<dd>Jeff e Annie, Community.
+		<dt>Jasiper
+			<dd>Jason e Piper, Percy Jackson.
+		<dt>Adrinette
+			<dd>Marinette e Adrian, Miraculous.
+	</dl>
+	<h2>Links!!!!!</h2>
+	<p>Vamos para parte importante do nosso aprendizado agora: hyperlinks. permitem que a gente una pontos da internet. É super importante que seus sites tenham links de outros sites para melhorá-lo no mecanismo de busca do google. O google é o maior buscador do mundo. Quando você tem um canal do youtube, é legal ter um site no google, e vice versa, porque vira uma estratégia para criar links. 
+	<br>
+	Como criar um hyperlink: tag a (anchor). Tem como atributo href, que cria a referência. Coloca a href="seu link" , coloca o texto no meio, e fecha a tag. Vamos testar. </p>
+	<a href="https://twitter.com">twitter.</a>
+	<p>Além do a href, depois do link tu pode colocar hreflang="". É uma maneira de avisar qual o idioma do site que você ta mostrando, porque avisa aos softwares de tradução. 
+	<h2>Atributo Targets</h2>
+	<p>
+		Se tu clica um hyperlink assim, vão substituir a aba aberta por esse site novo. Isso normalmente não é bom. Então podemos uar o atributo target na tag a. Os valores possíveis são: _blank (abre o link numa nova aba; _self (abre na janela ou frame atual, a que vem de padrão). Tem que ter _. Tem outras opções, mas não são comuns.
+	<br> Exemplo
+		<a href="https://twitter.com" target="_blank"> twitter. </a>
+	<br>
+		Outro atributo legal é rel. Ele diz qual a natureza do destino (se é seu, de alguém). Os valores possíveis são: next (próxima página do documento atual, tipo pag2); prev (página anterior do doc atual); author (link para um site de fora mas do mesmo autor do artigo atual); external (outro site que não faz parte do site atual); nofollow (link para um site não endossado, um que você não saiba da procedência, como um link pago. O nofollow avisa pro mec de busca que tu não quer que esse site seja associado ao seu).
+	<br>Exemplo 
+		<a href="https://twitter.com" target="_blank" rel="external"> twitter em outra aba e de fora desse site </a>
+	<br><strong>PS!!</strong>Se você quiser fazer um link local/interno, ou seja, que vai pra uma página do próprio site, não precisa colocar uma tag completa; só o caminho. Se for pra outro site, ou seja, link externo, precisamos da link completa incluindo protocolo e caminho.
+	***COMO VOLTAR UMA PASTA AO BOTAR UM LINK? USE LINUX: 
+	COMO AVISAR QUAL PASTA É? ./ (é a própria pasta).      ../ é a pasta anterior. (isso é linux)
+	<br>Agora vamos ver LINKS INTERNOS. Para isso, vamos criar um novo html na mesma pasta que estamos (ex009). Ela é a pag002. Se você quiser acessar a pag002, é só clicar <a href="pag002.html" target="_blank" ref="next">aqui</a>. 
+	Também criamos uma página dentro de uma pasta! A pag003. Vamos colocar um <a href="noticias/pag003.html" target="_blank">link para a página 3?</a>
+</body>
+</html>

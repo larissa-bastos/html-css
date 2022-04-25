@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pseudo-classes</title>
+	<style>
+		div {
+			display: inline-block;
+			/* /\ faz com que propriedades block, como a div, se tornem inline */
+			border: none;
+			text-align: center;
+			padding: 5px;
+			height: 200px;
+			width: 200px;
+			margin: 10px;
+			border-radius: 100px;
+			box-shadow: 2px 2px 5px 2px darkslategrey;
+		}
+
+
+		#info {
+			background-image: radial-gradient(farthest-corner at 40px 40px, blue, purple);
+		}
+
+		#primeira {
+			background-color: lightblue;
+
+		}
+
+		div:hover {
+			background-color: lightcyan;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="primeira">01</div>
+	<div id="segunda">02</div>
+	<div id="terceira">03</div>
+	<div id="info"></div>
+</body>
+</html>

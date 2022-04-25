@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ex hover</title>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		div {
+			padding: 10px;
+		}
+
+		div > p {
+			/* /\ Parágrafo que está dentro (filho) de uma div, só mexe no parágrafo que ta dentro de uma div. Então esse seletor é dos parágrafos dentro de divs. */
+			display: none;
+		}
+
+		div:hover > p {
+/* /\ o que isso tá dizendo é que quando passarmos o mouse em cima da div algo vai acontecer com o parágrafo dentro dela (filho)*/
+		display: block; /* voltar a aparecer */
+		color: white;
+		background-color: lightblue;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<h1>Exemplo de hover</h1>
+	<p>Passe o mouse sobre o texto abaixo:</p>
+	<div>
+		Passe o mouse aqui
+		<p> surpresa </p>
+	</div>
+	<p> lalala.
+</body>
+</html>

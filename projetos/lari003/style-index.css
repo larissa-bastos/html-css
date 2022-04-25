@@ -1,0 +1,28 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background-color: #EFBCBC;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #8E5C5C;
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: darkred;
+}
+
+.main-content {
+	display: flex;
+}

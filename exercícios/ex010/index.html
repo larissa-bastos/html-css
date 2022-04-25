@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Criando hyperlinks para downloads</title>
+</head>
+<body>
+	<h3>Início</h3>
+	<p>Cria uma pasta dentro da sua e coloca um arquivo lá, é ele que vamos fazer download. No caso, a pasta livro. Se for algo muito grande, vale compactar seu arquivo num zip. </p>
+	<h2>Links para download</h2>
+	<p>Para fazer isso você vai colocar um link normal com o arquivo que você quer baixar, mas adiciona o atributo download com o valor configurado para o nome do arquivo (repete o nome do arquivo mesmo) e atributo type, que vai dizer o que tá sendo baixado. Ou seja, vai ficar um a href="CAMINHO" download="NOME DO LIVRO" type="tipo do arquivo".</p>
+	<h2>Mas como que eu sei o type do meu arquivo?</h2>
+	<p>Lista de media types: lista oficial da <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"> IANA.org </a>!! Mas além disso, aqui temos umas opções de media types usados comumente: </p>
+	<ul>
+		<li>application/zip (arquivos zip)
+		<li>application/pdf
+		<li>text/html
+		<li>text/css
+		<li>text/javascript
+		<li>video/mp4
+		<li>video/H264
+		<li>video/JPEG
+		<li>audio/aac
+		<li>audio/mpeg
+		<li>font/ttf
+		<li>image/jpeg
+		<li>image/png
+	</ul> 
+	<p>Agora sim: baixa o teste <a href="livro/protocolo.pdf" download="protocolo.pdf" type="application/pdf">aqui!!</a>. Vamos tentar <a href="livro/protocolo.rar" download="protocolo.rar" type="application/rar">baixar em rar também.</a>
+	<br>Pro rar baixou, pro pdf só abriu link porque ta sendo reconhecido pelo navegador. Mas tá certo. </p>
+	<h2>Agora você precisa fazer os desafios 4 a 6.</h2> 
+</body>
+</html>

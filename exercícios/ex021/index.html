@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grouping tags e box-model</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--div e span. mesma função, mas div é box-level e span é inline-level. Elas são permitidas, mas dá pra usar tb grouping tags semânticas. Essas grouping tags são tipo divs. -->
+	<header>
+		<h1>Meu site</h1>
+		<nav>
+			<a href="#">Um </a>
+			<a href="#">Dois </a>
+			<a href="#"> Três </a>
+			<a href="#"> Quatro </a>
+		</nav>
+	</header>
+	<main>
+		<section id="assuntos">
+		<p>e-sports</p>
+
+		</section>
+
+		<section id="noticias">
+			<article>
+				<div class="main1">
+					<h2 class="titulo1">Que sorte a nossa: será mesmo?</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde maiores porro in impedit eius nisi similique harum ipsa sapiente repellendus facilis expedita earum quaerat, iure dolorem saepe mollitia cupiditate. Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Laboriosam laborum recusandae illo dolores impedit accusamus aliquid. Similique quod, corporis rem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi fugit facilis accusantium voluptate dignissimos, consequuntur error ipsum hic eligendi sequi, asperiores rem dolorum ducimus facere alias ex atque exercitationem.</p>
+					<aside>
+					<p> Autor: blablabla </p> 
+					</aside>
+				</div>
+			
+				<div class="img">
+					<img src="tin.jpg" alt="foto do tinowns" width= 400px />
+				</div>
+			</article>	
+		</section>
+	</main>
+	<footer>
+		<p>Desenvolvido por lari </p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+		body {
+			background-color: lightskyblue;
+			font-family: Arial;
+			font-size: 20px;
+		}
+		h1 {
+			color: darkblue;
+			background-color: darkgoldenrod;
+			font-size: 1.5em;
+		}
+		h2 {
+			font-size: 1.2em;
+			color: darkred;
+		}
+		p {
+			text-align: justify;
+		}
