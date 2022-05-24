@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Shorthand background</title>
+    <style>
+        body {
+            height: 100vw;
+            /* background: black url(imagens/wallpaper002.jpg) center center no-repeat cover fixed; 
+            
+            o bg some 
+            
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center top/cover no-repeat fixed;
+            /* funcionou então é isso, esse é o shorthand certo */
+        }
+
+        main {
+            background-color: white;
+            width: 200px;
+            border: 1px solid black;
+            padding: 30px;
+            margin-inline: auto;
+        }
+
+
+        /*================= SHORTHAND DO BACKGROUND ============
+            ordem:
+            color > image > position > repeat > [size] > attachments
+
+
+            exemplo: 
+            background: black url("image/wallpaper002/png") center center no-repeat [cover] fixed;
+
+            ***** size / cover: na prática do guanabara não funcionou. Nos comentários disseram que tem que ter uma barra entre position e size, e ddepois repeat. Ou seja: 
+            color > image > position/size > repeat > attachment
+            FUNCIONOU
+            */
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Olá</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laborum pariatur in reiciendis rerum perspiciatis asperiores sit minima? Quo fugit quia animi ullam quasi cum voluptates sit voluptate quidem. Repellat placeat unde dolore non eaque, dolores exercitationem vel dicta autem dolorem sunt maxime quia magni praesentium similique nostrum tempore iure enim, impedit adipisci sint. Unde cum earum, numquam tempora ipsam delectus nam voluptatem nisi pariatur. Modi suscipit corrupti tempore porro.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt voluptatem doloribus dicta doloremque vero vel sit deserunt vitae veritatis blanditiis repudiandae maxime exercitationem repellendus culpa dolorum nihil neque eius architecto aperiam, soluta quos nisi! Quos quaerat quae assumenda est, sapiente placeat, aperiam ipsa id saepe cumque mollitia aspernatur odit reprehenderit blanditiis voluptatibus architecto corrupti, excepturi quia. Esse obcaecati praesentium vero dolorem mollitia, nemo vel accusamus sed eum soluta ducimus rem vitae magni optio aliquid harum adipisci sit asperiores maiores doloribus.
+        </p>
+    </main>
+</body>
+
+</html>

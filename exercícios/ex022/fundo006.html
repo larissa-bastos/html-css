@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            /* é bom ter uma imagem de fundo e uma cor de fundo, porque se a imagem demorar de carregar ele consegue já consumir o conteúdo enquanto carrega*/
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* o background-size aceita: 
+            tamanhos: 100%, 1000px. mas são pouco recomendados 
+            auto: padrão do navegador
+            contain: a imagem aparece 100%, mas cria espaços vazios nos lados em que não couber para não cortar
+            cover: corta a imagem automaticamente de acordo com o tamanho de tela: a mais indicada
+            todos podem ser bons dependendo do seu objetivo.
+            */
+            font-family: Arial, Helvetica, sans-serif;
+            background-attachment: fixed;
+
+            /* 
+            background-attachment pode ser: scroll (desce com o scroll) ou fixed (mantém no lugar o background)
+
+
+             ================= SHORTHAND DO BACKGROUND ============
+            ordem:
+            color > image > position > repeat > [size] > attachments
+
+
+            exemplo: 
+            background: black url("image/wallpaper002/png") center center no-repeat [cover] fixed;
+
+            ***** size / cover: na prática do guanabara não funcionou. Nos comentários disseram que tem que ter uma barra entre position e size, e ddepois repeat. Ou seja: 
+            color > image > position/size > repeat > attachment
+            vou fazer o teste no testefundo.html
+
+
+            funcionou com a barra.
+            */
+        }
+
+        main {
+            background-color: white;
+            max-width: 400px;
+            text-align: justify;
+            padding: 20px;
+            margin-top: 20px;
+            margin-inline: auto;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Título</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis veniam alias eos accusamus in perferendis modi id itaque tempora quia.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo qui dolorum impedit, omnis excepturi reprehenderit a enim culpa ullam, repellat ratione esse accusantium explicabo officiis quod architecto voluptas nostrum placeat eaque? Ea deserunt eveniet iste magni labore. Modi, placeat ullam! Id iure aperiam voluptates molestias quaerat unde, corporis quisquam culpa?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, commodi dicta natus nulla saepe amet iusto. Quod, at velit ea sequi in perspiciatis nihil sapiente deserunt iusto, placeat est earum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, commodi dicta natus nulla saepe amet iusto. Quod, at velit ea sequi in perspiciatis nihil sapiente deserunt iusto, placeat est earum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, commodi dicta natus nulla saepe amet iusto. Quod, at velit ea sequi in perspiciatis nihil sapiente deserunt iusto, placeat est earum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, commodi dicta natus nulla saepe amet iusto. Quod, at velit ea sequi in perspiciatis nihil sapiente deserunt iusto, placeat est earum!
+        </p>
+
+    </main>
+</body>
+
+</html>
