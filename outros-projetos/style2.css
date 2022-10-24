@@ -1,0 +1,16 @@
+li {
+  list-style: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: A B C D;
+}
+
+li:nth-child(1) {
+  grid-area: A;
+}
+
+li:nth-child(2) {
+  grid-area: B;
+}
